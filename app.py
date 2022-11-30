@@ -10,7 +10,7 @@ def user_input_features():
   number2=st.number_input("Input 2nd number here :")
   number3=st.number_input("Input 3rd number here :")
   data={'number1':number1,'number2':number2,'number3':number3}
-  features = pd.DataFrame(data,index=[0])
+ 
   maxnum = max(number1,number2,number3)
 
   return maxnum
