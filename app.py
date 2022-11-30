@@ -12,11 +12,12 @@ def user_input_features():
   data={'number1':number1,'number2':number2,'number3':number3}
   features = pd.DataFrame(data,index=[0])
   maxnum = max(number1,number2,number3)
+  st.subheader('The maximum value is')
+  st.write(maxnum)
   return maxnum
 
 
-df = user_input_features()
-st.subheader('The maximum value is')
-st.write(df)
+
+
 
 
